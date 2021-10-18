@@ -4,3 +4,5 @@ $directory=$parent+$folder
 #New-Item -Name $folder -Path $parent -ItemType directory
 $acl = Get-Acl $Directory
 $acl | fl
+$acl.SetAccessRuleProtection($true,$True)
+$acl |Set-Acl
