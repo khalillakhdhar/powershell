@@ -1,7 +1,7 @@
 ﻿$p=Read-Host 'donner le poid'
 [float]$t=Read-Host 'donner la taille'
-[float]$imc=$p/($t*$t)
-$imc= [math]::Round($imc)
+[float]$imc=$p/($t*$t) #force type float avec la ,
+$imc= [math]::Round($imc) #arrondi de $imc
 Write-Host "votre IMC est de:" $imc
 if($imc -lt 20)
 {
