@@ -9,7 +9,7 @@ if($a -gt $b)
 $a=$a-$b
 
 }
-else
+elseif($b -gt $a)
 {
 $b=$b-$a
 }
