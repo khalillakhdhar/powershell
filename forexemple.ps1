@@ -1,6 +1,8 @@
 ﻿$somme=0
-for($i=4;$i -le 12;$i++)
+[int]$v1=Read-Host "donner un entier"
+[int]$v2=Read-Host "donner un deuxiéme entier"
+for($i=$v1;$i -le $v2;$i++)
 {
 $somme=$somme+$i
 }
-Write-Host "la somme des éléments entre 4 et 12 est: " $somme
+Write-Host "la somme des éléments: " $somme
