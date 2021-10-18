@@ -8,7 +8,8 @@ if($imc -lt 20)
 Write-Host "maigre"
 }
 elseif($imc -le 25)
-{Write-Host "idéale"
+{
+Write-Host "idéale"
 }
 else
 {
